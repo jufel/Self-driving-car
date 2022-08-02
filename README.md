@@ -1,2 +1,3 @@
 # Self-driving-car
-self-driving car using dnn
+Self-driving car using MobileNetV3-Large
+
