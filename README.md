@@ -6,8 +6,10 @@ Current self-driving cars rely on sensors, complex decision-making algorithms, d
 
 ## Dataset description
 The MLiS-II dataset consisted of 13.8k images, collected by driving this car manually around 3 different tracks, were provided to us. The images were of dimensions 320x240 pixels. The labels of the images included the steering angle and the speed. For simplicity, speed takes only binary values- ’go’: 1, ’stop’: 0. Both steering angle and speed were normalized to values between 0 and 1 according to the equations as follows: 
+
                                                                     anglenorm = (angle−50) / 80 
                                                                     speednorm = (speed−0) / 35 
+                                                                    
 On top of this, we collected 1.3k more images to collect more data on left turns, traffic signal response and on the 8-shaped track.
 
 ## Implementation
