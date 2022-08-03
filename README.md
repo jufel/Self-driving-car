@@ -20,3 +20,14 @@ The SpeedNet had a training accuracy of **99.97%** and a validation accuracy of 
 
 ## Future improvements
 As the model failed in detecting a left arrow traffic symbol, we could increase the number of left arrow traffic symbol photos in the dataset. Instead of having 2 networks, one could also go for a 4 network model where the 2 extra networks take care of signals(red or green) and arrow traffic symbols. This would enable the model to overcome both the problems encountered during the testing phase. As our model has 2 networks trained through transfer learning, the first 44 layers have the same weights. Hence, these can be shared by both the networks, thereby reducing the number of weights, computations and latency. 
+
+## References
+[1] Andrew G. Howard, Menglong Zhu, Bo Chen, Dmitry Kalenichenko, Weijun Wang, Tobias Weyand, Marco Andreetto, and Hartwig Adam. Mobilenets: Efficient convolutional neural networks for mobile vision applications. CoRR, abs/1704.04861, 2017.
+
+[2] QEngineering, ‘Deep learning with Raspberry Pi and alternatives in 2022, howpublished=https://qengineering.eu/deeplearning-with-raspberry-pi-and-alternatives.html’.
+
+[3] Vandit Jain, ’Everything you need to know about MobileNetV3, howpublished=https://towardsdatascience.com/everything-you-need-to-know-about-mobilenetv3-and-itscomparison-with-previous-versions-a5d5e5a6eeaa’.
+
+[4] KDnuggets, ’Google Open Sources MobileNetV3 with New Ideas to Improve Mobile Computer Vision Models, howpublished= https://www.kdnuggets.com/2019/12/google-open-sources-mobilenetv3-improve-mobile-computervision-models.html’.
+
+[5] M. Sandler, A. G. Howard, M. Zhu, A. Zhmoginov, L.-C. Chen, ‘Inverted Residuals and Linear Bottlenecks: Mobile Networks for Classification, Detection and Segmentation’, CoRR, . abs/1801.04381, 2018
