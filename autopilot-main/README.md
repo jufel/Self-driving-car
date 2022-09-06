@@ -34,24 +34,15 @@ You should get an angle of 88 and a speed of 35, with an inference time of aroun
 Other available models are 
 
 ```
-python run.py --model maggie
+python run.py --model AlphaCar
 ```
 
 and a model converted to tflite
 
 ```
-python run.py --model maggie_tpu
+python run.py --model AlphaCar3
 ```
 
-## Modifying
-
-1. Create another directory in the models directory, with the directory name the same as your group name (no spaces please, use an underscore). 
-
-2. Create a file called model.py in this directory. Your model.py file can contain anything you like (use pytorch or jax if you want to!), the only restriction is it *must* define a Model class with a predict method, which takes an image as input and outputs the speed and angle (in 'car' units). 
-
-3. You can use models/base/model.py as a guide. Remember to change any image preprocessing to match what you did in training.
-
- If you use additional packages, please edit the 'requirements.txt' file so we can install them. 
 
 To test using your model
 
